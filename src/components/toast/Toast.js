@@ -18,7 +18,6 @@ MySwal.fire({
         MySwal.clickConfirm()
     }
 }).then(() => {
-    // return MySwal.fire(<p>SweetAlert2</p>)
     return Toast.fire({
         type: 'success',
         title: 'SweetAlert2 is imported successfully'
