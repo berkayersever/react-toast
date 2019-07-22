@@ -51,17 +51,14 @@ class Button extends Component {
         return (
             <div>
                 <div>
-                    <p>Hello, {this.state.firstName}.</p>
-                    <p>You're from {this.state.country}.</p>
-                    {/*<p>Toast Notifications are {this.state.checked ? "On" : "Off"}</p>*/}
+                    <p><code>Hello {this.state.firstName}, you're from {this.state.country}.</code></p>
                     <button onClick={() => {
                         if(this.state.checked) {
                             import('../toast/Toast.js').then(module => {});
                         }
                         else {
-                            alert("BAZINGA " + this.state.firstName.toUpperCase() + "!");
+                            alert("Toast Notifications are Off");
                         }
-                        this.handleOnClick("#FD8F83")
                     }}>Wanna Try
                     </button>
                     {this.state.showComponent ? <div>Hello</div> : null}
