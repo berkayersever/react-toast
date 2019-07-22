@@ -13,39 +13,11 @@ class Button extends Component {
             checked: true
         };
         this.handleChange = this.handleChange.bind(this);
-        // this.handleOnClick = this.handleOnClick.bind(this);
-        // console.log(JSON.stringify(this))
     }
-
-    handleOnClick(color) {
-        if (color === "#A4D87C") {
-            alert(this.state.firstName);
-            // const someSpecialData = 'Clicked!';
-            // const MyButton = ({ onClick }) => (
-            //     <button onClick={() => onClick({ someSpecialData })}>
-            //         Click Me
-            //     </button>
-            // );
-        }
-        else if (color === "#FD8F83") {
-            alert("BAZINGA " + this.state.firstName.toUpperCase() + "!");
-        }
-    }
-
-    buttonClicked() {
-        console.log('Button was clicked!');
-        alert(this.state.firstName);
-    };
 
     handleChange(checked) {
         this.setState({checked});
     }
-
-    // handleChange = () => {
-    //     this.setState({
-    //         showComponent: !this.state.showComponent,
-    //     });
-    // };
 
     render() {
         return (
@@ -65,7 +37,7 @@ class Button extends Component {
                 </div>
                 <div>
                     <label>
-                        <span>Toast Notifications are {this.state.checked ? "On " : "Off "}</span>
+                        <span><code>Toast Notifications are {this.state.checked ? "On " : "Off "}</code></span>
                         <Switch onChange={this.handleChange} checked={this.state.checked}/>
                     </label>
                 </div>
