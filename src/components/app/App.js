@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from '../button/Button';
+// import { Button } from 'reactstrap';
 import logo from '../../assets/images/logo.svg';
 import './App.css';
 
@@ -18,6 +20,8 @@ function App() {
         >
           Learn React
         </a>
+        <Button color="danger">Danger!</Button>
+        {/*<button onClick={this.buttonClicked}>Meet Someone New</button>*/}
       </header>
     </div>
   );
