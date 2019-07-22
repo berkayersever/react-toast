@@ -24,7 +24,7 @@ class Button extends Component {
         return (
             <div>
                 <div>
-                    <p><code>Hello {this.state.firstName}, you're from {this.state.country}.</code></p>
+                    <p><code>Hello {this.state.firstName} {this.state.lastName}, you're from {this.state.country}.</code></p>
                     <button className={"button"} onClick={() => {
                         if(this.state.checked) {
                             import('../toast/Toast.js').then(module => {});
@@ -32,7 +32,7 @@ class Button extends Component {
                         else {
                             alert("Toast Notifications are Off");
                         }
-                    }}>Click</button>
+                    }}>Toast!</button>
                 </div>
                 <div>
                     <label>
