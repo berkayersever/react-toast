@@ -4,14 +4,23 @@ import withReactContent from 'sweetalert2-react-content'
 
 const MySwal = withReactContent(Swal);
 
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000
+});
+
 MySwal.fire({
     title: <p>Hello World</p>,
     footer: 'Copyright 2018',
     onOpen: () => {
-        // `MySwal` is a subclass of `Swal`
-        //   with all the same instance & static methods
         MySwal.clickConfirm()
     }
 }).then(() => {
-    return MySwal.fire(<p>Shorthand works too</p>)
+    // return MySwal.fire(<p>SweetAlert2</p>)
+    return Toast.fire({
+        type: 'success',
+        title: 'SweetAlert2 is imported successfully'
+    })
 });
