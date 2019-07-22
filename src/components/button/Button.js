@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Switch from 'react-switch';
 import Chance from 'chance';
 
 class Button extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         const chance = new Chance(Math.random);
         this.state = {
             firstName: chance.first(),
             lastName: chance.last(),
-            country: chance.country({ full: true }),
+            country: chance.country({full: true}),
             checked: true
         };
         this.handleChange = this.handleChange.bind(this);
@@ -17,8 +17,8 @@ class Button extends Component {
         // console.log(JSON.stringify(this))
     }
 
-    handleOnClick(color){
-        if(color === "#A4D87C") {
+    handleOnClick(color) {
+        if (color === "#A4D87C") {
             alert(this.state.firstName);
             // const someSpecialData = 'Clicked!';
             // const MyButton = ({ onClick }) => (
@@ -27,7 +27,7 @@ class Button extends Component {
             //     </button>
             // );
         }
-        else if(color === "#FD8F83") {
+        else if (color === "#FD8F83") {
             alert("BAZINGA " + this.state.firstName.toUpperCase() + "!");
         }
     }
@@ -38,7 +38,7 @@ class Button extends Component {
     };
 
     handleChange(checked) {
-        this.setState({ checked });
+        this.setState({checked});
     }
 
     // handleChange = () => {
@@ -48,37 +48,31 @@ class Button extends Component {
     // };
 
     render() {
-        return (<div>
-            <p>Hello, {this.state.firstName}.</p>
-            <p>You're from {this.state.country}.</p>
-            <p>Toast Notifications are {this.state.toast ? "On" : "Off"}</p>
-            <button onClick={() => {this.handleOnClick("#FD8F83")}}>Meet Someone New</button>
-            {/*<label>*/}
-                {/*<input*/}
-                    {/*type="radio"*/}
-                    {/*name="a"*/}
-                    {/*onChange={this.handleChange}*/}
-                    {/*checked={this.state.checked}*/}
-                {/*/>{" "}*/}
-                {/*Show{" "}*/}
-            {/*</label>*/}
-            {/*<label>*/}
-                {/*<input*/}
-                    {/*type="radio"*/}
-                    {/*name="a"*/}
-                    {/*onChange={this.handleChange}*/}
-                    {/*checked={!this.state.checked}*/}
-                {/*/>{" "}*/}
-                {/*Hide{" "}*/}
-            {/*</label>*/}
-            {this.state.showComponent ? <div>Hello</div> : null}
-            <label>
-                <span>Switch with default style</span>
-                <Switch onChange={this.handleChange} checked={this.state.checked} />
-            </label>
-            {/*<input type='radio' name='a' onChange={this.handleChange} checked={!this.state.showComponent}/>*/}
-            {/*<input type='radio' name='a' onChange={this.handleChange} checked={this.state.showComponent}/>*/}
-        </div>)
+        return (
+            <div>
+                <div>
+                    <p>Hello, {this.state.firstName}.</p>
+                    <p>You're from {this.state.country}.</p>
+                    {/*<p>Toast Notifications are {this.state.checked ? "On" : "Off"}</p>*/}
+                    <button onClick={() => {
+                        if(this.state.checked) {
+                            import('../toast/Toast.js').then(module => {});
+                        }
+                        else {
+                            alert("BAZINGA " + this.state.firstName.toUpperCase() + "!");
+                        }
+                        this.handleOnClick("#FD8F83")
+                    }}>Wanna Try
+                    </button>
+                    {this.state.showComponent ? <div>Hello</div> : null}
+                </div>
+                <div>
+                    <label>
+                        <span>Toast Notifications are {this.state.checked ? "On " : "Off "}</span>
+                        <Switch onChange={this.handleChange} checked={this.state.checked}/>
+                    </label>
+                </div>
+            </div>)
     }
 }
 
