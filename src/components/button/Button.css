@@ -1,9 +1,20 @@
-.login_btn {
+.button {
+    background-color: #282c34; /* Green */
+    border: 2px solid #fbc337;
+    border-radius: 5px;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
     background-color: #fbc337;
-    height: 40px;
-    width: 100%;
-    border-radius: 1px;
     color: #2d2d2d;
-    font-size: 1.4rem;
-    font-weight: 600;
 }
