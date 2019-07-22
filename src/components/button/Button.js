@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Switch from 'react-switch';
 import Chance from 'chance';
+import './Button.css';
 
 class Button extends Component {
     constructor(props) {
@@ -24,16 +25,14 @@ class Button extends Component {
             <div>
                 <div>
                     <p><code>Hello {this.state.firstName}, you're from {this.state.country}.</code></p>
-                    <button onClick={() => {
+                    <button className={"button"} onClick={() => {
                         if(this.state.checked) {
                             import('../toast/Toast.js').then(module => {});
                         }
                         else {
                             alert("Toast Notifications are Off");
                         }
-                    }}>Wanna Try
-                    </button>
-                    {this.state.showComponent ? <div>Hello</div> : null}
+                    }}>Click</button>
                 </div>
                 <div>
                     <label>
