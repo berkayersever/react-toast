@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/react-toast/static/css/main.2cce8147.chunk.css",
-    "main.js": "/react-toast/static/js/main.2ab81796.chunk.js",
-    "main.js.map": "/react-toast/static/js/main.2ab81796.chunk.js.map",
-    "runtime~main.js": "/react-toast/static/js/runtime~main.bfc8aa08.js",
-    "runtime~main.js.map": "/react-toast/static/js/runtime~main.bfc8aa08.js.map",
-    "static/js/2.b41502e9.chunk.js": "/react-toast/static/js/2.b41502e9.chunk.js",
-    "static/js/2.b41502e9.chunk.js.map": "/react-toast/static/js/2.b41502e9.chunk.js.map",
+    "main.css": "/react-toast/static/css/main.38917554.chunk.css",
+    "main.js": "/react-toast/static/js/main.e9f09b02.chunk.js",
+    "main.js.map": "/react-toast/static/js/main.e9f09b02.chunk.js.map",
+    "runtime~main.js": "/react-toast/static/js/runtime~main.78248032.js",
+    "runtime~main.js.map": "/react-toast/static/js/runtime~main.78248032.js.map",
+    "static/css/2.266e55a5.chunk.css": "/react-toast/static/css/2.266e55a5.chunk.css",
+    "static/js/2.8cbb0a97.chunk.js": "/react-toast/static/js/2.8cbb0a97.chunk.js",
+    "static/js/2.8cbb0a97.chunk.js.map": "/react-toast/static/js/2.8cbb0a97.chunk.js.map",
+    "static/js/3.650c035b.chunk.js": "/react-toast/static/js/3.650c035b.chunk.js",
+    "static/js/3.650c035b.chunk.js.map": "/react-toast/static/js/3.650c035b.chunk.js.map",
+    "static/js/4.c518ab8e.chunk.js": "/react-toast/static/js/4.c518ab8e.chunk.js",
+    "static/js/4.c518ab8e.chunk.js.map": "/react-toast/static/js/4.c518ab8e.chunk.js.map",
     "index.html": "/react-toast/index.html",
-    "precache-manifest.4c44b769178dba16fc72f2b4439d403f.js": "/react-toast/precache-manifest.4c44b769178dba16fc72f2b4439d403f.js",
+    "precache-manifest.db8e121768c36059653fd8801444945f.js": "/react-toast/precache-manifest.db8e121768c36059653fd8801444945f.js",
     "service-worker.js": "/react-toast/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/react-toast/static/css/main.2cce8147.chunk.css.map",
+    "static/css/2.266e55a5.chunk.css.map": "/react-toast/static/css/2.266e55a5.chunk.css.map",
+    "static/css/main.38917554.chunk.css.map": "/react-toast/static/css/main.38917554.chunk.css.map",
     "static/media/logo.svg": "/react-toast/static/media/logo.5d5d9eef.svg"
   }
 }
