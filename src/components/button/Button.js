@@ -23,8 +23,6 @@ class Button extends Component {
         this.setState({checked});
     }
 
-
-
     toastAlert() {
         const myPromise = new Promise((resolve, reject) => {
             if (import('../toast/Toast.js')) {
@@ -50,21 +48,6 @@ class Button extends Component {
         }, (error) => {
             console.log(error);
         });
-
-        // if(this.state.toast) {
-        //     console.log(import('../toast/Toast.js'));
-        //     const Toast = Swal.mixin({
-        //         toast: true,
-        //         position: 'top-end',
-        //         showConfirmButton: false,
-        //         timer: 3000
-        //     }).then(module => {})
-        //
-        //     Toast.fire({
-        //         type: 'success',
-        //         title: 'Signed in successfully'
-        //     })
-        // }
     }
 
     render() {
