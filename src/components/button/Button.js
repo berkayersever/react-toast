@@ -23,6 +23,10 @@ class Button extends Component {
         this.setState({checked});
     }
 
+    handleToast(toast) {
+        this.setState({toast});
+    }
+
     toastAlert() {
         const myPromise = new Promise((resolve, reject) => {
             if (import('../toast/Toast.js')) {
@@ -58,7 +62,13 @@ class Button extends Component {
                     <button className={"button"} onClick={() => {
                         if(this.state.checked) {
                             import('../toast/Toast.js').then(Toast => {
+                                this.handleToast(true);
                                 Toast.success();
+                            });
+                        }
+                        else if(this.state.toast) {
+                            import('../toast/Toast.js').then(Toast => {
+                                Toast.error();
                             });
                         }
                         else {
