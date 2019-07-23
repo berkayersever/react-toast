@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../button/Button';
-// import { Button } from 'reactstrap';
+import Toast from '../toast/Toast';
 import logo from '../../assets/images/logo.svg';
 import './App.css';
 
