@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{30:function(e,t,n){"use strict";n.r(t);var o=n(0),i=n.n(o),r=n(28),s=n.n(r),c=n(29),l=n.n(c)()(s.a),p=s.a.mixin({toast:!0,position:"top-end",showConfirmButton:!1,timer:3e3});l.fire({title:i.a.createElement("p",null,"Hello World"),footer:"Copyright 2018",onOpen:function(){l.clickConfirm()}}).then(function(){return p.fire({type:"success",title:"SweetAlert2 is imported successfully"})})}}]);
-//# sourceMappingURL=4.c518ab8e.chunk.js.map
