@@ -2,24 +2,115 @@ import React from 'react';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
-const MySwal = withReactContent(Swal);
+function success() {
+    const MySwal = withReactContent(Swal);
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000
+    });
+    MySwal.fire({
+        title: <p>Hello World</p>,
+        footer: 'Copyright 2018',
+        onOpen: () => {
+            MySwal.clickConfirm()
+        }
+    }).then(() => {
+        return Toast.fire({
+            type: 'success',
+            title: 'SweetAlert2 is imported successfully'
+        })
+    });
+}
 
-const Toast = Swal.mixin({
-    toast: true,
-    position: 'top-end',
-    showConfirmButton: false,
-    timer: 3000
-});
+function error() {
+    const MySwal = withReactContent(Swal);
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000
+    });
+    MySwal.fire({
+        title: <p>Hello World</p>,
+        footer: 'Copyright 2018',
+        onOpen: () => {
+            MySwal.clickConfirm()
+        }
+    }).then(() => {
+        return Toast.fire({
+            type: 'error',
+            title: 'SweetAlert2 couldn\'t be imported'
+        })
+    });
+}
 
-MySwal.fire({
-    title: <p>Hello World</p>,
-    footer: 'Copyright 2018',
-    onOpen: () => {
-        MySwal.clickConfirm()
-    }
-}).then(() => {
-    return Toast.fire({
-        type: 'success',
-        title: 'SweetAlert2 is imported successfully'
-    })
-});
+function warning() {
+    const MySwal = withReactContent(Swal);
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000
+    });
+    MySwal.fire({
+        title: <p>Hello World</p>,
+        footer: 'Copyright 2018',
+        onOpen: () => {
+            MySwal.clickConfirm()
+        }
+    }).then(() => {
+        return Toast.fire({
+            type: 'warning',
+            title: 'Warning for something'
+        })
+    });
+}
+
+function info() {
+    const MySwal = withReactContent(Swal);
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000
+    });
+    MySwal.fire({
+        title: <p>Hello World</p>,
+        footer: 'Copyright 2018',
+        onOpen: () => {
+            MySwal.clickConfirm()
+        }
+    }).then(() => {
+        return Toast.fire({
+            type: 'info',
+            title: 'Information about something'
+        })
+    });
+
+}
+
+function question() {
+    const MySwal = withReactContent(Swal);
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000
+    });
+    MySwal.fire({
+        title: <p>Hello World</p>,
+        footer: 'Copyright 2018',
+        onOpen: () => {
+            MySwal.clickConfirm()
+        }
+    }).then(() => {
+        return Toast.fire({
+            type: 'question',
+            title: 'Question about something'
+        })
+    });
+}
+
+export { success, error, warning, info, question };
