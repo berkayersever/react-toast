@@ -68,7 +68,7 @@ class Button extends Component {
                         }
                         else if(this.state.toast) {
                             import('../toast/Toast.js').then(Toast => {
-                                Toast.error();
+                                Toast.warning();
                             });
                         }
                         else {
