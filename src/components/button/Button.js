@@ -73,7 +73,6 @@ class Button extends Component {
                         }
                         else {
                             alert("Toast Notifications are Off");
-                            // Toast.error();
                         }
                     }}>{this.state.title}</button>
                 </div>
