@@ -1,6 +1,7 @@
 import React from 'react';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import './Animate.css';
 
 function success() {
     const MySwal = withReactContent(Swal);
@@ -8,7 +9,8 @@ function success() {
         toast: true,
         position: 'top-end',
         showConfirmButton: false,
-        timer: 3000
+        timer: 3000,
+        background: 'linear-gradient(to left, rgba(67, 172, 67, 0.7), #43ac43)'
     });
     MySwal.fire({
         title: <p>Hello World</p>,
@@ -30,7 +32,8 @@ function error() {
         toast: true,
         position: 'top-end',
         showConfirmButton: false,
-        timer: 3000
+        timer: 3000,
+        background: 'linear-gradient(to left, rgba(252, 68, 69, 0.7), #fc4445)'
     });
     MySwal.fire({
         title: <p>Hello World</p>,
@@ -52,7 +55,8 @@ function warning() {
         toast: true,
         position: 'top-end',
         showConfirmButton: false,
-        timer: 3000
+        timer: 3000,
+        background: 'linear-gradient(to left, rgba(95, 151, 250, 0.7), #5f97fa)'
     });
     MySwal.fire({
         title: <p>Hello World</p>,
@@ -74,7 +78,8 @@ function info() {
         toast: true,
         position: 'top-end',
         showConfirmButton: false,
-        timer: 3000
+        timer: 3000,
+        background: 'linear-gradient(to left, rgba(95, 151, 250, 0.7), #5f97fa)'
     });
     MySwal.fire({
         title: <p>Hello World</p>,
@@ -97,7 +102,8 @@ function question() {
         toast: true,
         position: 'top-end',
         showConfirmButton: false,
-        timer: 3000
+        timer: 3000,
+        background: 'linear-gradient(to left, rgba(95, 151, 250, 0.7), #5f97fa)'
     });
     MySwal.fire({
         title: <p>Hello World</p>,
