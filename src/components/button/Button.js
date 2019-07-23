@@ -13,7 +13,8 @@ class Button extends Component {
             country: chance.country({full: true}),
             checked: true,
             toast: false,
-            module: null
+            module: null,
+            title: 'Click!'
         };
         this.handleChange = this.handleChange.bind(this);
     }
@@ -81,7 +82,7 @@ class Button extends Component {
                             alert("Toast Notifications are Off");
                             // Toast.error();
                         }
-                    }}>Toast!</button>
+                    }}>{this.state.title}</button>
                 </div>
                 <div>
                     <label>
