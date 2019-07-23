@@ -1,0 +1,6 @@
+.toast-success {
+    width: 355px;
+    height: 71px;
+    border-radius: 0px;
+    background-image: linear-gradient(to left, rgba(67, 172, 67, 0.7), #43ac43);
+}
