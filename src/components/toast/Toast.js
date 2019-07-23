@@ -67,7 +67,7 @@ function warning() {
     }).then(() => {
         return Toast.fire({
             type: 'warning',
-            title: 'Warning for something'
+            title: 'SweetAlert2 is already imported'
         })
     });
 }
